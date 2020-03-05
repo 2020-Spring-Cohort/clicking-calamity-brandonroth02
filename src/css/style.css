@@ -12,3 +12,12 @@ body {
       margin-left: 7rem;
       margin-right: 0;
   }
+  button{
+      width: 35px;
+      height: 45px;
+      margin-left: 3rem;
+  }
+  button img{
+      width: 30px;
+      height: 40px;
+  }
