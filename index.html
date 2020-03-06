@@ -9,21 +9,25 @@
 </head>
 
 <body>
+
 <div class="container">
     <div class="aligner-item">
-    <a href=# onclick="add ()"><img src="cookie.jpg"></a>
-    <br><br>
-    You Have:
-    <input type="text" id="text" disabled>
-    Cookies
+        <button class="clicker" onClick="cookieClick(1)">Bake a cookie</button>
 <br>
-    <p>Buy Auto Click Cursor</p>
-    <button><a href="#" onclick="buyAutoClickCursor()"><img src="hand cursor.png"></a> </button>
+    <p>Cookies: <span id="cookiecount">0</span></p>
+<br>
+    <button class="upgradeButton" onclick="buyAutoClicker()"><img src="hand cursor.png"></a> </button>
 <br>
     <p>Auto Clicker: <span id="autoClickers">0</span><br /><p>
         <p>Cost: <span id="autoClickerCost">10</span></p>
 <br>
-    <button><a href="#" onclick="buyCookieRobot"()><img src="Robot.png"></a></button>
+    <button class="upgradeButton" onclick="buyRobot"()><img src="Robot.png"></a></button>
+<br>
+    <p>Robots: <span id="robots">0</span><br /><p>
+    <p>Cost: <span id="robotCost">100</span><br /><p></p>
+
+    </div>
+</div>
     
 
 </body>  

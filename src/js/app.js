@@ -1,14 +1,45 @@
-    var cookiecount = 0;
+var cookiecount = 0;
     
-    document.title = cookiecalamity + " Cookies";
-    document.getElementById('ammountAutoClick').innerText = "You have" + autoClick + "Auto Click Cursors";
-    document.getElementById('costAutoClick').innerHTML = ((autoClick+1) * 12) + " Cookies";
-
-function add(){
-    cookiecount = cookiecount +1
-    document.getElementById("text").value = cookiecount;
-    document.title = cookiecalamity + " Cookies";
+    
+   function cookieClick(number){
+    cookiecount = cookiecount + number;
+    document.getElementById("cookiecount").innerHTML = cookiecount;
+    
 }
+
+var autoClickers = 0;
+
+function buyAutoClicker() {
+    var autoClickerCost = Math.floor(10 * Math.pow(1.1,autoClickers));
+    if(cookiecount >= autoClickerCost){
+        autoClickers = autoClickers +1;
+        cookiecount = cookiecount - autoClickerCost;
+        document.getElementById('autoClickers').innerHTML = autoClickers;
+        document.getElementById('cookiecount').innerHTML = cookiecount;
+
+    }
+    var nextCost = Math.floor(10 * Math.pow(1.1,autoClickers));
+    document.getElementById('autoClickerCost').innerHTML = nextCost;
+}
+
+var robots = 0;
+
+function buyRobots(){
+    var robotCost = Math.floor(100 * Math.pow(1.1,robots));
+    if(cookiecount >= robotCost){
+        robots = robots + 10;
+        cookiecount = cookiecount - robotCost;
+        document.getElementById('robots').innerHTML = robots;
+        document.getElementById('cookiecount').innerHTML = cookiecount;
+    }
+    var nextCost = Math.floor(100 * Math.pow(1.1,robots));
+    document.getElementById('robotCost').innerHTML = nextCost;
+}
+
+window.setInterval(function(){
+    cookiecount(autoClickers);
+    cookiecount(robots);
+}, 1000);
 
 
 
