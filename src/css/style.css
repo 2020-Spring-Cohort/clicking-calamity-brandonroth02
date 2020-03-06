@@ -13,11 +13,24 @@ body {
       margin-right: 0;
   }
   button{
-      width: 35px;
+      width: 60px;
       height: 45px;
       margin-left: 3rem;
+      position: relative;
+      right: 72px;
+      top: 100px;
   }
   button img{
       width: 30px;
       height: 40px;
+      position: relative;
+      right: 72px;
+      
   }
+  p{
+      font-family: fantasy;
+      position: relative;
+      top: 100px;
+      right: 60px;
+  }
+  
