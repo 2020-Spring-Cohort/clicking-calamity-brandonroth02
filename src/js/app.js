@@ -24,7 +24,7 @@ function buyAutoClicker() {
 
 var robots = 0;
 
-function buyRobots(){
+function buyRobot(){
     var robotCost = Math.floor(100 * Math.pow(1.1,robots));
     if(cookiecount >= robotCost){
         robots = robots + 10;
