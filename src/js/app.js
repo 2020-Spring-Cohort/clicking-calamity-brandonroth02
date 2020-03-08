@@ -36,6 +36,9 @@ function buyRobot(){
     document.getElementById('robotCost').innerHTML = nextCost;
 }
 
+function reset() {
+    cookiecount = 0}
+
 window.setInterval(function(){
     cookieClick(autoClickers);
     cookieClick(robots);
