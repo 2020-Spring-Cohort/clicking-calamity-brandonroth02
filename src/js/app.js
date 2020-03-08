@@ -37,8 +37,8 @@ function buyRobots(){
 }
 
 window.setInterval(function(){
-    cookiecount(autoClickers);
-    cookiecount(robots);
+    cookieClick(autoClickers);
+    cookieClick(robots);
 }, 1000);
 
 
